@@ -15,7 +15,7 @@ This Bash script is designed to perform backup operations for a MySQL/MariaDB se
 ./backup_and_restart.sh [BRANCH]
 ```
 
-##Maria DB save
+## Maria DB save
 
 ```
 #!/bin/bash

@@ -36,20 +36,20 @@ sudo rsync -var --progress --delete /var/log/mysql/ /data/tmp/mysqllog/$BRANCH/
 docker start dev_mariadb
 ```
 
-##Docker compose start
+## Docker compose start
 
 ```
 #!/bin/bash
 
 sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compose.yml up -d
 ```
-##Docker compose stop
+## Docker compose stop
 ```
 #!/bin/bash
 
 sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compose.yml down
 ```
-##Docker compose update
+## Docker compose update
 ```
 #!/bin/bash
 
@@ -61,14 +61,14 @@ sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compo
 sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compose.yml build
 sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compose.yml up -d
 ```
-##Docker compose restart
+## Docker compose restart
 ```
 #!/bin/bash
 
 sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compose.yml down
 sudo /usr/local/bin/docker-compose -f /speedy/config/docker-dev-env/docker-compose.yml up -d
 ```
-##Maria DB restore
+## Maria DB restore
 ```
 #!/bin/bash
 

@@ -1,5 +1,26 @@
 # good_to_know
 
+## docker-compose.yml
+```
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
+
+```
 # MySQL Backup and Restart Script
 
 This Bash script is designed to perform backup operations for a MySQL/MariaDB server container and restart it. It includes a safety check to ensure that the specified branch name does not contain the character '/'.
